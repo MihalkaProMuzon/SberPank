@@ -1,0 +1,44 @@
+﻿<UserControl x:Name="userControlBase" x:Class="SberPank.FieldModelView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:SberPank"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800" Width="845" Height="30" Foreground="{x:Null}" Padding="0" Margin="0,4,0,0">
+    <Border BorderThickness="1" Margin="0" Width="845" Height="30">
+        <Border.Effect>
+            <DropShadowEffect Color="#19DEFFE1" BlurRadius="20" Opacity="0.6"/>
+        </Border.Effect>
+        <Border.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#2DECA8A8" Offset="0.605"/>
+                <GradientStop Color="#268FF767" Offset="0.938"/>
+                <GradientStop Color="#19E1EEAA" Offset="0.885"/>
+            </LinearGradientBrush>
+        </Border.Background>
+        <StackPanel HorizontalAlignment="Left" Height="30" Margin="10,0,-1,-2" VerticalAlignment="Top" Width="834" Orientation="Horizontal">
+            <Border BorderBrush="#FFAC4A12" BorderThickness="0,0,0,1" Width="110" Height="22" Margin="0,0,12,0">
+                <TextBox x:Name="nameTB" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Width="110" HorizontalAlignment="Center" VerticalAlignment="Center" Height="22" Background="{x:Null}" BorderBrush="{x:Null}" Margin="0" Foreground="#FFAC4A12" FontSize="14"/>
+            </Border>
+            <Border BorderBrush="#FFAC4A12" BorderThickness="0,0,0,1" Width="120" Height="22" Margin="0,4,16,4">
+                <TextBox x:Name="fromTB" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Width="120" HorizontalAlignment="Center" VerticalAlignment="Center" Height="22" Background="{x:Null}" BorderBrush="{x:Null}" Margin="0" Foreground="#FFAC4A12" FontSize="14"/>
+            </Border>
+            <Border BorderBrush="#FFAC4A12" BorderThickness="0,0,0,1" Width="120" Height="22" Margin="0,4,20,4">
+                <TextBox x:Name="toTB" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Width="120" HorizontalAlignment="Center" VerticalAlignment="Center" Height="22" Background="{x:Null}" BorderBrush="{x:Null}" Margin="0" Foreground="#FFAC4A12" FontSize="14"/>
+            </Border>
+            <Border BorderBrush="#FFAC4A12" BorderThickness="0,0,0,1" Width="42" Height="22" Margin="0,4,16,4">
+                <TextBox x:Name="indexTB" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Width="42" HorizontalAlignment="Center" VerticalAlignment="Center" Height="22" Background="{x:Null}" BorderBrush="{x:Null}" Margin="0" Foreground="#FFAC4A12" FontSize="14"/>
+            </Border>
+            <Border BorderBrush="#FFAC4A12" BorderThickness="0,0,0,1" Width="54" Height="22" Margin="0,4,5,4">
+                <TextBox x:Name="offsetTB" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Width="54" HorizontalAlignment="Center" VerticalAlignment="Center" Height="22" Background="{x:Null}" BorderBrush="{x:Null}" Margin="0" Foreground="#FFAC4A12" FontSize="14"/>
+            </Border>
+            <CheckBox x:Name="repeatsCB" Content="" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="25,7,46,8" Width="16" Background="#3FD6E8D6" Height="15" BorderBrush="#FF0BA012"/>
+            <CheckBox x:Name="optionalCB" Content="" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="25,7,35,8" Width="16" Background="#3FD6E8D6" Height="15" BorderBrush="#FF0BA012"/>
+            <Border BorderBrush="#FFAC4A12" BorderThickness="0,0,0,1" Width="45" Height="22" Margin="16,4,0,4">
+                <TextBox x:Name="cellcharsTB" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Width="45" HorizontalAlignment="Right" VerticalAlignment="Center" Height="22" Background="{x:Null}" BorderBrush="{x:Null}" Margin="0" Foreground="#FFAC4A12" FontSize="14"/>
+            </Border>
+            <Button Style="{StaticResource ResourceKey=but}" x:Name="delFieldBut" Content="×" HorizontalAlignment="Center" VerticalAlignment="Center" Width="23" Height="20" BorderBrush="#FF069D1C" Background="#FFF2FFEB" Foreground="#FFCF9F1E" Margin="22,5,0,5" Click="delFieldBut_Click"/>
+        </StackPanel>
+    </Border>
+</UserControl>

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32602.291
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SberPank", "SberPank.csproj", "{897AC170-EE6F-4244-87AC-236395369EB6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{897AC170-EE6F-4244-87AC-236395369EB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{897AC170-EE6F-4244-87AC-236395369EB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{897AC170-EE6F-4244-87AC-236395369EB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{897AC170-EE6F-4244-87AC-236395369EB6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1938EA26-14C4-4874-B2B9-F47B9FAD55E1}
+	EndGlobalSection
+EndGlobal
